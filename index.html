@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Page layout</title>
+        <style type="text/css">
+            *
+            {
+                padding:0px;
+                margin:0px;
+                font-family:calibri;
+                box-sizing: border-box;
+            }
+
+            #Logo
+            {
+                width: 100%;
+                min-height: 50px;
+                background-color: skyblue;
+                line-height: 50px;
+                padding-left: 2%;
+                padding-right: 2%;
+                margin-bottom: 10px;
+
+            }
+            #nav
+            {
+                width:100%;
+                min-height: 30px;
+                background-color: skyblue;
+                text-align: center;
+                line-height: 30px;
+                margin-bottom: 10px;
+            }
+            #header
+            {
+                width: 100%;
+                min-height: 100px;
+                background-color: skyblue;
+                text-align: center;
+                line-height: 100px;
+                margin-bottom: 10px;
+             }
+            #main
+            {
+                width: 100%;
+                margin-bottom: 10px;
+               
+            }
+            #sidebar
+            {
+                width: 20%;
+                min-height: 400px;
+                background-color: skyblue;
+                float: left;
+                line-height: 400px;
+                text-align: center;
+            }
+            #body-area
+            {
+                width: 75%;
+                min-height: 400px;
+                background-color: skyblue;
+                float: right;
+                line-height: 400px;
+                text-align: center;
+            }
+            .clearfix::after
+            {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            #footer
+            {
+                width: 100%;
+                min-height: 30px;
+                background-color: skyblue;
+                text-align: center;
+                min-height: 30px;
+            }
+
+        </style>
+        
+    </head>
+    <Body>
+        <div id="Logo">
+            Logo
+        </div>
+        <div id="nav">
+            Navigation
+        </div>
+        <div id="header">
+            Header/Barner
+        </div>
+        <div id="main" class="clearfix">
+            <div id="sidebar">
+                side bar
+            </div>
+            <div id="body-area">
+                Body Area
+            </div>
+        </div>
+        <div id="footer">footer</div>
+
+    </Body>
+</html>
